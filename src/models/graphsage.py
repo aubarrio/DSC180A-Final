@@ -1,4 +1,4 @@
-from spektral.layers import GCNConv
+from spektral.layers import GraphConv
 from spektral.layers import GraphSageConv
 
 from tensorflow.keras.models import Model
@@ -12,7 +12,7 @@ from tensorflow.keras.regularizers import l2
 
 def GraphSage(A, F, N, X, train_mask, val_mask, labels_encoded, num_classes, aggr, channels, dropout, l2_reg, learning_rate, epochs, es_patience):
 
-    A = GCNConv.preprocess(A).astype('f4')
+    A = GraphConv.preprocess(A).astype('f4')
 
     X_in = Input(shape=(F, ))
     fltr_in = Input((N, ), sparse=True)
@@ -24,7 +24,7 @@ def GraphSage(A, F, N, X, train_mask, val_mask, labels_encoded, num_classes, agg
                             use_bias=False)([dropout_1, fltr_in])
 
     dropout_2 = Dropout(dropout)(graph_conv_1)
-    graph_conv_2 = GCNConv(num_classes,
+    graph_conv_2 = GraphConv(num_classes,
                          activation='softmax',
                          use_bias=False)([dropout_2, fltr_in])
 

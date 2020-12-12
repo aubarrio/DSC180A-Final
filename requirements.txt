@@ -43,7 +43,7 @@ scikit-learn==0.23.2      # via ogb, sklearn, spektral
 scipy==1.5.4              # via -r requirements.in, keras, scikit-learn, spektral
 six==1.15.0               # via absl-py, astunparse, google-auth, google-pasta, grpcio, h5py, keras-preprocessing, ogb, protobuf, python-dateutil, tensorboard, tensorflow
 sklearn==0.0              # via -r requirements.in
-spektral==1.0.3           # via -r requirements.in
+spektral==0.6.2          # via -r requirements.in
 tensorboard-plugin-wit==1.7.0  # via tensorboard
 tensorboard==2.4.0        # via tensorflow
 tensorflow-estimator==2.3.0  # via tensorflow
