@@ -1,0 +1,8 @@
+{
+	"channels": 16,
+	"dropout": 0.5,
+	"l2_reg": 5e-4,
+	"learning_rate": 0.1,
+	"epochs": 200,
+	"es_patience": 10
+}
