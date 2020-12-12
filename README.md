@@ -8,18 +8,20 @@ This file reads in a dataset and runs our implementation of either GCN-LPA or Gr
 * OGB-arxviv: Classification of type of CS papers
 
 ## In order to run run.py through termal you must use: 
-* `python run.py <file path> source`
+* `python run.py <file path> model aggregator`
+* Aggregator only applies towards graphSage with the choices being: mean or max
 
-If you were to run this on the twitch dataset then you would run the command
-* `python run.py data/raw/twitch twitch`
 
-Examples for the other two datasets are as follows
-* `python run.py data/raw/cora cora`
-* `python run.py data/raw/facebook facebook`
+If you were to run this on the cora dataset with the GCN-LPA model then you would run the command
+* `python run.py data/cora gcn_lpa`
+
+Examples for the other two models are as follows
+* `python run.py data/cora graphsage mean`
+* `python run.py data/cora gcn`
 
 Simply running the command
               `python run.py`
-would default to using the cora dataset gathering its params from the config/params.json file
+would default to using the ogb dataset gathering its params from the config/params.json file
 
 
 ### Responsibilities
