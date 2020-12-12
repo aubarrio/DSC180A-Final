@@ -3,7 +3,7 @@
 How to run the run.py file.
 This file reads in a dataset and runs our implementation of either GCN-LPA or GraphSage
 
-## 2 Datasets
+## Datasets
 * Cora Dataset: Network connection between publications
 * OGB-arxviv: Classification of type of CS papers
 
