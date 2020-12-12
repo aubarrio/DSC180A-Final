@@ -21,7 +21,7 @@ Examples for the other two models are as follows
 
 Simply running the command
               `python run.py`
-would default to using the ogb dataset gathering its params from the config/params.json file
+would default to using the cora dataset and gcn model gathering its params from the config/params.json file
 
 
 ### Responsibilities
