@@ -23,6 +23,16 @@ Simply running the command
               `python run.py`
 would default to using the cora dataset and gcn model gathering its params from the config/params.json file
 
+## Installation
+In order to replicate the results found in our replication project we recommend following the steps listed below in order to make sure you meet the requirements to run our models.
+
+#### Pip install
+The recommended way to install and meet the requirements for our project we suggest using pip like so:
+```bash
+pip install -r requirements.txt
+```
+This uses the requirements.txt file we have set up in order to run this project
+
 
 ### Responsibilities
 * Austin Le - Added functionality and dataparsing for OGB dataset as well as work on the Replication Report
